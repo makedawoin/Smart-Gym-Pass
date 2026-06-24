@@ -88,7 +88,7 @@ public class AttendanceTracker {
             }
 
         } catch (SQLException e) {
-            System.err.println(" Error retrieving check-in: " + e.getMessage());
+            System.err.println(" Error recovering check-in: " + e.getMessage());
         }
 
         return null;

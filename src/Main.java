@@ -440,22 +440,29 @@ public class Main {
             return 0;
         }
     }
-
     private static void createSampleData() {
-        System.out.println("\n✓ Creating sample data...\n");
+        Member existing = MemberManager.getMemberByID("M001");
 
-        Member m1 = new Member("M001", "Abebe", "abebe@gmail.com", "0911222333");
-        Member m2 = new Member("M002", "Almaz", "almaz@gmail.com", "0912333444");
+        if (existing == null) {
+            System.out.println("\n✓ Creating sample data...\n");
 
-        MemberManager.addMember(m1);
-        MemberManager.addMember(m2);
+            Member m1 = new Member("M001", "Abebe", "abebe@gmail.com", "0911222333");
+            Member m2 = new Member("M002", "Almaz", "almaz@gmail.com", "0912333444");
 
-        Pass p1 = new MonthlyPass("P001", "M001", LocalDate.now());
-        Pass p2 = new YearlyPass("P002", "M002", LocalDate.now());
+            MemberManager.addMember(m1);
+            MemberManager.addMember(m2);
 
-        PassManager.addPass(p1);
-        PassManager.addPass(p2);
+            Pass p1 = new MonthlyPass("P001", "M001", LocalDate.now());
+            Pass p2 = new YearlyPass("P002", "M002", LocalDate.now());
 
-        System.out.println("Sample data created!\n");
+            PassManager.addPass(p1);
+            PassManager.addPass(p2);
+
+            System.out.println("✓ Sample data created!\n");
+        } else {
+            System.out.println("\n✓ Sample data already exists!\n");
+        }
+    }
+
     }
 }

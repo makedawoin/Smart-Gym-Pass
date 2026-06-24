@@ -3,9 +3,13 @@ We built a complete gym management system called Smart Gym Pass System where mem
 We're a team of 5 people: 
 
 #Feven built the database connection so the program can talk to MySQL and also handles all payment saving and tracking.
+
 #Hasset created the pass system with 3 types of passes (Trial, Monthly, Yearly) where each pass type has different prices and durations.
+
 #Huda built the attendance tracking system that records when members check in and check out.
+
 #Makeda created the member profiles and member management handling everything about gym members.
+
 #Meron built the exception handling system with custom exceptions and the reporting system so admins can see reports. 
 
 When you run the program, you can add new members to the gym, view member details, update member information, issue passes to members (Trial, Monthly, or Yearly), record when members check in and check out, process payments, and view detailed reports about members, passes, check ins, and money. We used Java as the programming language, MySQL as the database where we store all the data, and JDBC as the bridge between Java and MySQL.

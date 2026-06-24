@@ -256,7 +256,7 @@ public class GymReport {
         System.out.println("1. Member Statistics Report");
         System.out.println("2. Pass Statistics Report");
         System.out.println("3. Attendance Report");
-        System.out.println("4. Financial Report");
+        System.out.println("4. Finance Report");
         System.out.println("5. Comprehensive Report (All)");
         System.out.println("6. Exit");
         System.out.println("=".repeat(50));

@@ -1,4 +1,5 @@
 import java.util.List;
+import Payment.Payment;
 public class GymReport {
 
     public static void generateMemberReport() {

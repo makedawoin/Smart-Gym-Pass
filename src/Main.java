@@ -1,8 +1,10 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Scanner;
+import java.util.List;
+import Payment.Payment;
 
-public class SmartGymPassSystem {
+public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -352,7 +354,7 @@ public class SmartGymPassSystem {
                 }
             }
         } catch (ExpiredPassException e) {
-            System.out.println( + e.getMessage());
+            System.out.println( e.getMessage());
         }
     }
 

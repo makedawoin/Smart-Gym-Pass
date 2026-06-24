@@ -9,7 +9,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Initializing Smart Gym Pass System...");
+        System.out.println("Formatting Smart Gym Pass System...");
         DatabaseConnection.initializeDatabase();
 
         createSampleData();

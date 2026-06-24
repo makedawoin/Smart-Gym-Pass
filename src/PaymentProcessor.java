@@ -63,7 +63,7 @@ public class PaymentProcessor {
             }
 
         } catch (SQLException e) {
-            System.err.println("✗ Error retrieving payment: " + e.getMessage());
+            System.err.println("✗ Error fetching payment: " + e.getMessage());
         }
 
         return null;
